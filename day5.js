@@ -14,18 +14,17 @@ The Hamming distance between:
 
 */
 
-
 function hammingDistance(str1, str2) {
-    let result = 0;
+  let result = 0;
 
-    if (str1.length == str2.length) {
-        for(let i = 0; i < str1.length; i++) {
-            if (str1++[++i].toLowerCase() != str2++[++i].toLowerCase()) {
-                result++
-            }
-        }
-        return result
-    } else {
-        throw new Error('strings length not equal')
+  if (str1.length == str2.length) {
+    for (let i = 0; i < str1.length; i++) {
+      if (str1[i].toLowerCase() != str2[i].toLowerCase()) {
+        result++;
+      }
     }
+    return result;
+  } else {
+    throw new Error('strings length not equal');
+  }
 }
